@@ -1,0 +1,24 @@
+C Program
+int main(void) {
+  for(int i = 0; i < 5; i++){
+    int row = 3;
+  }
+  printf("%d\n", row);
+}
+
+C++ Program 
+int main() {
+  for(int i = 0; i < 3; i++){
+    int tomatillo = tomatillo * 2;
+  }
+  std::cout << tomatillo;
+}
+
+Java Program 
+public static void main(String[] args) {
+    
+    for(int i = 0; i < 6;i++){
+      int bread = i;
+    }
+    System.out.println(bread);
+  }

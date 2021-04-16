@@ -1,0 +1,31 @@
+$a = 1;
+$b = 5;
+
+#Example of dynamic scoping
+print "The initial value of a = ".$a."\n";
+dynamic1();
+print "The value of a after running dynamic1= ".$a."\n\n";
+
+
+#Example of static scoping
+print "The initial value of b = ".$b."\n";
+static1();
+
+sub dynamic1{
+    local $a = 42;
+    print "Inside dynamic1\n";
+    print $a."\n";
+    dynamic2();
+}
+sub dynamic2{
+     print "Inside dynamic2\n";
+     print $a."\n";
+}
+sub static1{
+    my $b = 4;
+    print "The value of b is ".$b."\n";
+    static2();
+}
+sub static2{
+    print $b;
+}
